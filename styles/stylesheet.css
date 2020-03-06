@@ -1,7 +1,7 @@
 /*Universal styles*/
 html, body {
   font-family: Helvetica, Arial, sans-serif;
-  /*width: 100%;*/
+  width: 100%;
   margin: 0;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -33,7 +33,60 @@ h2 {
   position:relative;
   top:2rem;
   left: 15%;
-  /*margin: 0;*/
+}
+
+.head-nav {
+  background-color: rgb(235,235,235);
+  color: rgb(58,58,58);
+  font-size: 0.7rem;
+  padding: 1rem;
+  margin: 0;
+  position: relative;
+  top: 30%;
+  text-indent: 12.5%;
+}
+
+/*Main Page Styles, e.g. body semantic elements, typography, etc.*/
+.main-page {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: 3.5rem;
+  overflow-y: hidden;
+}
+
+aside {
+  float: right;
+  position: relative;
+  left: 3rem;
+  width: 35%;
+}
+
+.page-section {
+  top: 4rem;
+  width: 65%;
+}
+
+.content-box {
+  float: left;
+  width: 30%;
+  height: 22rem;
+  border: 0.2rem solid rgb(58,58,58);
+  margin: 1rem 1.15%;
+  background-color: rgb(235,235,235);
+  overflow: hidden;
+  text-align: center;
+}
+
+.box-text {
+  color: rgb(58,58,58);
+  font-size: 0.55rem;
+  line-height: 0.95rem;
+  text-align: left;
+  margin: 1rem 0.5rem 1rem -0.05rem;
+  width: 100%;
+  position: relative;
+  left: 16.5%;
 }
 
 h3 {
@@ -48,48 +101,15 @@ h4 {
   line-height: 1.25rem;
 }
 
-/*Other Body Text Styles*/
-section:not(.content-box) {
-  position: relative;
-  top: 4rem;
-  left: 15%;
-  width: 45%;
-}
-
-.head-nav {
-  background-color: rgb(235,235,235);
-  color: rgb(58,58,58);
-  font-size: 0.7rem;
-  padding: 1rem;
-  margin: 0;
-  position: relative;
-  top: 30%;
-  /*width: 100%;*/
-  text-indent: 12.5%;
-}
-
-.container {
-  width: 80%;
-  margin: 2rem;
-}
-
-.content-box {
-  height: 23rem;
-  width: 14rem;
-  padding: 1rem 2rem;
-  border: 0.25rem solid rgb(58,58,58);
-  margin: 3rem 1rem 0;
-  position: relative;
-  left:10%;
-  top: 1rem;
-  right: 10%;
-  float: left;
-}
-
 p {
   color: rgb(58,58,58);
   font-size: 0.55rem;
   line-height: 0.95rem;
+}
+
+/*Special Text Styles*/
+.bold {
+  font-weight:bold;
 }
 
 a {
@@ -100,10 +120,6 @@ a {
 
 a.in-line {
   margin:0;
-}
-
-.bold {
-  font-weight:bold;
 }
 
 .teal-text {
@@ -118,27 +134,26 @@ a.in-line {
 }
 
 /*Image Styling*/
-#logo {
-  width: 20%;
-}
-
 figure {
-  position: relative;
-  left: -37px;
-  font-size: 0.55rem;
-  width: 100%;
-}
-
-.box-text {
+  width: 75%;
+  margin: 0;
   color: rgb(58,58,58);
   font-size: 0.55rem;
   line-height: 0.95rem;
-  text-align: justify;
-  margin: 1rem 0.5rem 1rem -0.05rem;
+}
+
+.inline-pic {
+  width: 100%;
 }
 
 .profile-pic {
-  width: 96%;
+  width: 100%;
+  position: relative;
+  left: 16.5%;
+}
+
+#logo {
+  width: 20%;
 }
 
 /*Footer Styles*/
@@ -162,13 +177,4 @@ footer {
   padding: 0.75rem;
   position: relative;
   left: 35%;
-}
-
-/* FIX THIS!!! Page Layout and Positioning Styles*/
-aside {
-  float: right;
-  position: relative;
-  right: 10%;
-  left: 0.5rem;
-  width: 35%;
 }
